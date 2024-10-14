@@ -1,0 +1,89 @@
+.marquee {
+  width: 85%;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px; /* Added padding for a better layout */
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  width: max-content;
+  animation: marquee 130s linear infinite;
+  gap: 150px; /* Adjust spacing between marquee items */
+}
+
+.marquee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  text-align: center;
+  width: 70px;
+  margin: 0 auto; /* Ensure items stay centered */
+}
+
+.icon {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.name {
+  width: 155px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  text-align: center; /* Ensures text is centered inside the p tag */
+  display: flex;
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers text vertically within the flex container */
+}
+
+
+
+
+/* Keyframes for infinite sliding */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .marquee-item {
+    margin-right: 30px; /* Reduce spacing */
+  }
+
+  .marquee-item img {
+    width: 120px; /* Smaller images on tablet screens */
+  }
+
+  .name {
+    font-size: 12px; /* Smaller text for tablet screens */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .marquee-item {
+    margin-right: 28px; /* Further reduce spacing for small screens */
+  }
+
+  .marquee-item img {
+    width: 100px; /* Even smaller images for mobile */
+  }
+
+  .name {
+    font-size: 10px; /* Smaller text for mobile screens */
+  }
+}
+
