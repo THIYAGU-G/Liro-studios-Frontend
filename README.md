@@ -1,4 +1,4 @@
-# LIRO Studios website
+# LIRO Studios REACT website
 ## requirements to be installed to run the project
 1. Visual Studio code editor
 2. Node
