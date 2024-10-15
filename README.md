@@ -9,7 +9,7 @@
 4. After the completion of npm installation, type "npm run dev" to start your project
 5. It just provide a link to run the project on port 5173 for the development server.
 
-### for the demo purpose of myproject refer **Liro.netlify.app** in your browser
+### for the demo purpose of myproject refer [Liro.netlify.app](https://Liro.netlify.app) in your browser
 
 
 
